@@ -8,13 +8,13 @@ const ButtonSecondary = (props) => {
     padding: 14px;
     height: 49px;
     background-color: transparent;
-    border: 1px solid rebeccapurple;
+    border: 1px solid ${props.color ? props.color : 'rebeccapurple'};;
     display: flex;
     text-decoration: none;
     align-items: center;
     justify-content: center;
     outline: none;
-    color: rebeccapurple;
+    color: ${props.color ? props.color : 'rebeccapurple'};
     font-family: inherit;
     transition: 300ms;
     font-family: helvetica, sans-serif;
