@@ -13,6 +13,8 @@ const HeroCont = (props) => {
   `
 
   const Paragraph = styled.p`
+    max-width: 980px;
+    margin: auto;
     padding-top: 19px;
     text-align: center;
     font-size: 16px;
