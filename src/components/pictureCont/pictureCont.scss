@@ -112,7 +112,7 @@
 .contentsCont {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
 
   .contents {
     margin: 36px;

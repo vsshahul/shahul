@@ -19,6 +19,7 @@ const ButtonSecondary = (props) => {
     transition: 300ms;
     font-family: helvetica, sans-serif;
     text-transform: capitalize;
+    
     &:hover{
       border-color:  #ff8896;
       color:  #ff8896;
