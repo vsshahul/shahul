@@ -1,0 +1,36 @@
+//color -----------------------------------------
+
+$-dark : #1b262c;
+$-blue : #0f4c75;
+$-winter : #3282b8;
+$-cold : #bbe1fa;
+$-bg : #fdfdfd;
+$-primary : #263646;
+
+//-----------------------------------------------
+
+//Fonts -----------------------------------------
+
+$primary-font : monospace,helvetica;
+
+//-----------------------------------------------
+
+//Global Style ----------------------------------
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: $-bg;
+  color: $-primary;
+  font-family: $primary-font;
+  font-weight: bold;
+  font-size: 30px;
+}
+a{
+  text-decoration: none;
+  color: $-blue;
+}
+//-----------------------------------------------

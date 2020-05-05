@@ -7,6 +7,7 @@ const CheckoutCont = (props) => {
   const CheckoutCont = styled.div`
     margin: auto;
     height: 449px;
+    width: 1000px;
     object-fit: contain;
     display: flex;
     flex-direction: column;

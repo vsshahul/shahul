@@ -8,9 +8,10 @@ const IndexPage = () => {
 
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="Home" description='' />
+
       <Link to='navigation'>
-        Nav
+        ui8.dev Components
       </Link>
        
     </Layout>
