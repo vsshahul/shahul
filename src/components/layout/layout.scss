@@ -24,6 +24,15 @@ a{
 .link:hover{
   color: $-winter;
 }
+.h1{
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+.ctrl-btn{
+  opacity: .8;
+  box-shadow: unset;
+}
 
 .root-cont{
   min-height: 100vh;
@@ -38,7 +47,9 @@ a{
     padding: 20px 0;
     flex: 1;
     max-width: 1280px;
-    padding-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .footer{
     height: 100px;

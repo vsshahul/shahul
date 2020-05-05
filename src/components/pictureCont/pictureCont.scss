@@ -1,3 +1,4 @@
+ 
 .box {
   width: 1200px;
   margin: auto;
@@ -14,6 +15,8 @@
   .header {
     display: flex;
     height: 206px;
+    max-width: 1024px;
+    margin: auto;
     justify-content: space-between;
     align-items: center;
 
@@ -89,8 +92,8 @@
 }
 
 .marginCont {
+  max-width: 1024px;
   margin: auto;
-  width: 100%;
 
   .contentsCont.unset {
     margin: unset;
@@ -101,7 +104,7 @@
       height: 264px;
       object-fit: contain;
       margin: unset;
-      margin-bottom: 40px;
+      margin: 20px;
     }
   }
 }
@@ -109,7 +112,7 @@
 .contentsCont {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 
   .contents {
     margin: 36px;
@@ -245,6 +248,53 @@
     z-index: 0;
     display: block;
     width: 100%;
+  }
+
+}
+
+@media only screen and (max-width:600px){
+
+  .box{
+    margin-top: unset;
+    .header{
+      flex-direction: column;
+      justify-content: unset;
+      aside{
+        margin-left: 20px;
+        .heading {
+          font-size: 18px;
+          margin-top: 20px;
+          margin-bottom: 20px;
+        }
+        .subHeading {
+          font-size: 14px;
+          margin-bottom: 20px;
+        }
+      }
+      & > .PrimaryBtn {
+        width: 180px;
+        height: 50px;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .marginCont{
+    width: 90%;
+   .contentsCont.unset{
+    .imageCont {
+      width: 140px;
+      height: 140px;
+      .tickBtn{
+        height: 40px;
+        width: 40px;
+        img{
+          height: inherit;
+          width: inherit;
+        }
+      }
+      }
+    }
   }
 
 }

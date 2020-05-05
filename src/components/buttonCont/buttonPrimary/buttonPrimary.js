@@ -18,9 +18,15 @@ const ButtonPrimary = (props) => {
     transition: 300ms;
     font-family: helvetica, sans-serif;
     text-transform: capitalize;
+
     &:hover {
       background-color: #ff6d7f;
-  }
+    }
+
+    @media only screen and (max-width: 600px){
+      margin-bottom: 20px;
+    }
+
   `
 
   return (

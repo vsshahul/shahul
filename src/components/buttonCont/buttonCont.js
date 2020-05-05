@@ -8,6 +8,10 @@ const ButtonCont = (props) => {
     display: flex;
     justify-content: center;
     font-size: 18px;
+    @media only screen and (max-width: 600px){
+      font-size: 14px;
+      padding:10px
+    }
   `
 
   return (

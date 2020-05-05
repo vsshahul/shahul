@@ -17,7 +17,7 @@ const Nav = () => (
         <Link to="/components/checkout">Checkout Container</Link>
         <Link to="/components/heroContainer">HeroContainer</Link>
         <Link to="/components/pictureCont">Picture Container</Link>
-        <Link to="/">Go back</Link>
+        <Link to="/" className='ctrl-btn'>Go back</Link>
       </div>
     </article>
 

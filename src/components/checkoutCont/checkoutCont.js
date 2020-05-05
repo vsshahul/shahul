@@ -5,9 +5,8 @@ import BG from './Bg_checkout.svg'
 const CheckoutCont = (props) => {
 
   const CheckoutCont = styled.div`
-    margin: auto;
     height: 449px;
-    width: 1000px;
+    width: 980px;
     object-fit: contain;
     display: flex;
     flex-direction: column;
@@ -17,12 +16,22 @@ const CheckoutCont = (props) => {
     background-image: url(${BG});
     background-color: #201d5e;
     border-radius: 40px;
+    @media only screen and (max-width: 600px){
+      height: 300px;
+      border-radius: 20px;
+      margin:4px;
+    }
+
   `
   const H2 = styled.h2`
-    font-family: $primaryfont;
-    color: $white;
+    font-family: helvetica;
+    color: white;
     font-size: 40px;
     padding-top: 32px;
+    @media only screen and (max-width: 600px){
+    padding-top: 25px;
+    font-size:30px;
+    }
   `
   const H4 = styled.h4`
     font-family: $primaryfont_light;
@@ -31,6 +40,9 @@ const CheckoutCont = (props) => {
     font-weight: 100;
     opacity: .8;
     padding-top: 32px;
+    @media only screen and (max-width: 600px){
+    font-size: 16px;
+    }
   `
   return (
     <CheckoutCont>

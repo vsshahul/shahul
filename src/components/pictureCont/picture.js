@@ -16,7 +16,6 @@ const Picture = ({ posts, setPosts }) => {
 }
 
 const Post = ({ index, post, posts, setPosts }) => {
-  console.log({ index, post, posts, setPosts })
   return (
     <div className='imageCont gradient'>
 
