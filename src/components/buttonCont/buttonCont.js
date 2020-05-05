@@ -7,6 +7,7 @@ const ButtonCont = (props) => {
     padding: 50px;
     display: flex;
     justify-content: center;
+    font-size: 18px;
   `
 
   return (

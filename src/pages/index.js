@@ -9,11 +9,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" description='' />
-
-      <Link to='navigation'>
-        ui8.dev Components
-      </Link>
-       
+       Work in progress...
     </Layout>
   )
 }

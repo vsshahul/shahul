@@ -7,43 +7,40 @@ const Header = ({ siteTitle }) => {
   const [nav] = useState([
     {
       label: 'About',
-      href: '/'
+      href: '/about'
     },
     {
       label: 'Contact',
-      href: '/'
+      href: '/contact'
     },
     {
       label: 'Projects',
-      href: '/'
+      href: '/projects'
     }
   ])
   return (
-    <header >
+    <header className='header'>
       <div className='header-wrapper'>
         <div className='logo-cont'>
           <Link to="/" className='logo'>
             {siteTitle}
           </Link>
         </div>
-        <nav className='Nav'>
+        <nav className='nav'>
           {
             nav.map((link, index) => (
               <Link 
               key={index} 
               to={link.href} 
-              className='Nav-link'>
+              className='nav-link'>
                 {link.label}
               </Link>
               )
             )
           }
-          <Link to='/' >
-            About
-        </Link>
         </nav>
-        <div>
-          <button>...</button>
+        <div className='menu-cont'>
+          <button className='menu-button'>...</button>
         </div>
       </div>
     </header>
