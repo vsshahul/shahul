@@ -1,19 +1,4 @@
-//color -----------------------------------------
-
-$-dark : #1b262c;
-$-blue : #0f4c75;
-$-winter : #3282b8;
-$-cold : #bbe1fa;
-$-bg : #fdfdfd;
-$-primary : #263646;
-
-//Fonts -----------------------------------------
-
-$primary-font : monospace,helvetica;
-$font-xl : 22px;
-$font-large : 18px;
-$font-small : 16px;
-$font-xs : 12px;
+@import '../../page-styles/variables.scss';
 
 //Global Style ----------------------------------
 
@@ -45,15 +30,15 @@ a{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  .header{
+  header.header{
     height: 100px;
     background-color: $-cold;
   }
   .content-cont{
     padding: 20px 0;
     flex: 1;
-    width: 1280px;
-    margin: auto;
+    max-width: 1280px;
+    padding-left: 20px;
   }
   .footer{
     height: 100px;
@@ -69,21 +54,24 @@ a{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 1280px;
+    max-width: 1280px;
     margin: auto;
     
     .logo-cont{
+      flex: 1;
       .logo{
-        
+        padding-left: 20px;
       }
     }
     .nav{
+      flex: .4;
       .nav-link{
         padding: 0 10px;
       }
     }
     .menu-cont{
       .menu-button{
+        padding-right: 20px;
         background-color: unset;
         border: unset;
       }
@@ -92,3 +80,10 @@ a{
   }
 }
 
+//footer ----------------------------------------
+
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

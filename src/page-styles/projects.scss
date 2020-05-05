@@ -1,0 +1,21 @@
+.project{
+ .h1{
+   padding: 10px 0;
+  a{
+
+  }
+ } 
+ .link-cont{
+   &>a:first-child{
+     padding-left: unset;
+   }
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: flex-start;
+   align-items: center;
+   a{
+    display: block;
+    padding: 10px;
+   }
+ }
+}
